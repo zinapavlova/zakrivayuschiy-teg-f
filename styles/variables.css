@@ -1,1 +1,31 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font-family: "Inter-Variable";
+  --accent-font-family: "PressStart2P";
+  --background-color: #ffffff;
+  --accent-color: #000000;
+  --heart-contour: #000000;
+  --heart-sparks: #ff0000;
+  --normal-font-weight: 400;
+  --bold-font-weight: 700;
+}
+@media (width <=375px) {
+  /* :root {
+        --width-card: 100%;
+    } */
+  a.logo {
+    font-size: clamp(2.625rem, 0.5385rem + 10.7692vw, 3.0625rem);
+    margin-block-start: 120px;
+  }
+  .save-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 20px;
+  }
+  .save-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
