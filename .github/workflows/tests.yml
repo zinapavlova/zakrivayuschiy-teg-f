@@ -1,4 +1,4 @@
-name: Tests
+name: Tests 8
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
 
 jobs:
   tests:
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -19,4 +20,4 @@ jobs:
       - name: Tests
         uses: Yandex-Practicum/test-project-action@v1
         with:
-          project: 'zakrivayuschiy-teg-f'
+          project: 'zakrivayuschiy-teg-final'

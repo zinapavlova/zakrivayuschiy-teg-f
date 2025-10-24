@@ -4,15 +4,17 @@
   --accent-font-family: "PressStart2P";
   --background-color: #ffffff;
   --accent-color: #000000;
+  --button-background-color: #FFFFFF;
+  --button-text-color: #FFFFFF;
   --heart-contour: #000000;
   --heart-sparks: #ff0000;
   --normal-font-weight: 400;
   --bold-font-weight: 700;
+  --background-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+  repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+  linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }
-@media (width <=375px) {
-  /* :root {
-        --width-card: 100%;
-    } */
+@media (width <= 375px) {
   a.logo {
     font-size: clamp(2.625rem, 0.5385rem + 10.7692vw, 3.0625rem);
     margin-block-start: 120px;
