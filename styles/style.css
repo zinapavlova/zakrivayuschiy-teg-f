@@ -19,8 +19,8 @@
   background-image: var(--background-gradient);
   background-repeat: no-repeat;
   background-size: cover;
-  height: clamp(667px, 66.67vh, 960px);
-}
+  background-attachment: fixed; 
+} 
 .header {
   display: flex;
   flex-direction: column;
@@ -40,11 +40,11 @@
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-style: normal;
   line-height: normal;
-  margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  margin-block-start: clamp(7.5rem, 6.1479rem + 1.5023vw, 8.5rem);
 }
 .header__title {
   margin-block-start: 20px;
-  margin-block-end: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  margin-block-end: clamp(7.5rem, 6.1479rem + 1.5023vw, 8.5rem);
   font-family: var(--accent-font-family), fantasy;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   font-style: normal;
@@ -90,7 +90,7 @@
   position: absolute;
   right: 25px;
   top: 25px;
-  text-shadow: 0 0 1px var(--background-color);
+  text-shadow: 0 0 2px var(--background-color);
   opacity: 50%;
   mix-blend-mode: hard-light;
 }
@@ -223,7 +223,8 @@
   color: var(--button-text-color);
 }
 .save-icon {
-  display: inline-block; 
+  display: inline-block;
+  flex-shrink: 0; 
 }
 .end .save-icon {
   position: relative;
@@ -238,8 +239,8 @@
   inset: 0;
   margin: auto;
   background-color: var(--background-color);
-  border: 2px solid var(--accent-color);
-  padding: 31px;
+  /*border: 2px solid var(--accent-color);*/
+  padding: 30px;
 }
 #dialog__id .save-icon {
   grid-area: icon;
